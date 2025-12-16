@@ -1,6 +1,6 @@
 {
   "name": "capacitor-proxy-network-details",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CapacitorJS plugin to fetch proxy details from a mobile device, as defined in its network settings.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -19,10 +19,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sheriff91/capacitor-network-proxy-details.git"
+    "url": "git+https://github.com/sheriff91/capacitor-proxy-network-details.git"
   },
   "bugs": {
-    "url": "https://github.com/sheriff91/capacitor-network-proxy-details/issues"
+    "url": "https://github.com/sheriff91/capacitor-proxy-network-details/issues"
   },
   "keywords": [
     "capacitor",
