@@ -11,9 +11,55 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`getProxy()`](#getproxy)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### getProxy()
+
+```typescript
+getProxy() => Promise<ProxyResult>
+```
+
+**Returns:** <code>Promise&lt;<a href="#proxyresult">ProxyResult</a>&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### ProxyResult
+
+| Prop       | Type                        |
+| ---------- | --------------------------- |
+| **`host`** | <code>string \| null</code> |
+| **`port`** | <code>number \| null</code> |
+
 </docgen-api>
+
+### Example
+
+```ts
+import { ProxyDetails } from 'capacitor-proxy-network-details';
+
+const { host, port } = await ProxyDetails.getProxy();
+
+if (host && port) {
+    console.log(`Proxy: ${host}:${port}`);
+} else {
+    console.log('No proxy configured');
+}
+```
+
+### Upcoming features
+
+* iOS support
+* PAC handling
+* VPN-aware logic

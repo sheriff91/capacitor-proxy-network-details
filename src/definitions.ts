@@ -1,3 +1,8 @@
 export interface ProxyDetailsPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  getProxy(): Promise<ProxyResult>;
+}
+
+export interface ProxyResult {
+  host: string | null;
+  port: number | null;
 }
